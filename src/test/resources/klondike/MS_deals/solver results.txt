@@ -1,0 +1,239 @@
+Easy1.json:
+===================================================
+DFS:
+Solution Type: solved
+States Searched: 188
+Unique States Searched: 94
+Backtracks: 114
+Dominance Moves: 41
+States Removed From Cache: 0
+Final States In Cache: 53
+Final Buckets In Cache: 53
+Maximum Search Depth: 74
+Final Search Depth: 74
+Time Taken (milliseconds): 0
+ID-DFS:
+ID-DFS - explore solution up to depth: 73 -> at depth 63 solved
+ID-DFS - explore solution up to depth: 62 -> at depth 60 solved
+ID-DFS - explore solution up to depth: 59 -> at depth 43 timed-out
+
+Solution Type: solved
+States Searched: 789141
+Unique States Searched: 439166
+Backtracks: 789081
+Dominance Moves: 347197
+States Removed From Cache: 0
+Final States In Cache: 91969
+Final Buckets In Cache: 98317
+Maximum Search Depth: 62
+Final Search Depth: 60
+Time Taken (milliseconds): 938
+
+
+Easy2.json:
+===================================================
+DFS:
+Solution Type: solved
+States Searched: 96
+Unique States Searched: 70
+Backtracks: 26
+Dominance Moves: 38
+States Removed From Cache: 0
+Final States In Cache: 32
+Final Buckets In Cache: 53
+Maximum Search Depth: 70
+Final Search Depth: 70
+Time Taken (milliseconds): 0
+ID-DFS:
+ID-DFS - explore solution up to depth: 69 -> at depth 42 timed-out
+ID-DFS did not find a solution
+
+
+Medium1.json
+===================================================
+DFS:
+Solution Type: solved
+States Searched: 75222
+Unique States Searched: 19488
+Backtracks: 75135
+Dominance Moves: 5047
+States Removed From Cache: 0
+Final States In Cache: 14441
+Final Buckets In Cache: 24593
+Maximum Search Depth: 87
+Final Search Depth: 87
+Time Taken (milliseconds): 118
+ID-DFS:
+ID-DFS - explore solution up to depth: 86 -> at depth 86 solved
+ID-DFS - explore solution up to depth: 85 -> at depth 85 solved
+ID-DFS - explore solution up to depth: 84 -> at depth 84 solved
+ID-DFS - explore solution up to depth: 83 -> at depth 83 solved
+ID-DFS - explore solution up to depth: 82 -> at depth 82 solved
+ID-DFS - explore solution up to depth: 81 -> at depth 81 solved
+ID-DFS - explore solution up to depth: 80 -> at depth 80 solved
+ID-DFS - explore solution up to depth: 79 -> at depth 79 solved
+ID-DFS - explore solution up to depth: 78 -> at depth 78 solved
+ID-DFS - explore solution up to depth: 77 -> at depth 77 solved
+ID-DFS - explore solution up to depth: 76 -> at depth 76 solved
+ID-DFS - explore solution up to depth: 75 -> at depth 75 solved
+ID-DFS - explore solution up to depth: 74 -> at depth 74 solved
+ID-DFS - explore solution up to depth: 73 -> at depth 73 solved
+ID-DFS - explore solution up to depth: 72 -> at depth 72 solved
+ID-DFS - explore solution up to depth: 71 -> at depth 71 solved
+ID-DFS - explore solution up to depth: 70 -> at depth 49 timed-out
+
+Solution Type: solved
+States Searched: 8020184
+Unique States Searched: 3810977
+Backtracks: 8020113
+Dominance Moves: 2776855
+States Removed From Cache: 0
+Final States In Cache: 1034122
+Final Buckets In Cache: 1572869
+Maximum Search Depth: 71
+Final Search Depth: 71
+Time Taken (milliseconds): 9073
+
+
+Hard1.json
+===================================================
+DFS:
+Solution Type: solved
+States Searched: 91
+Unique States Searched: 77
+Backtracks: 14
+Dominance Moves: 36
+States Removed From Cache: 0
+Final States In Cache: 41
+Final Buckets In Cache: 53
+Maximum Search Depth: 77
+Final Search Depth: 77
+Time Taken (milliseconds): 0
+ID-DFS:
+ID-DFS - explore solution up to depth: 76 -> at depth 76 solved
+ID-DFS - explore solution up to depth: 75 -> at depth 45 timed-out
+
+Solution Type: solved
+States Searched: 160145
+Unique States Searched: 74293
+Backtracks: 160069
+Dominance Moves: 51232
+States Removed From Cache: 0
+Final States In Cache: 23061
+Final Buckets In Cache: 24593
+Maximum Search Depth: 76
+Final Search Depth: 76
+Time Taken (milliseconds): 156
+
+
+Expert1.json
+===================================================
+DFS:
+Solution Type: solved
+States Searched: 402
+Unique States Searched: 145
+Backtracks: 270
+Dominance Moves: 33
+States Removed From Cache: 0
+Final States In Cache: 112
+Final Buckets In Cache: 193
+Maximum Search Depth: 132
+Final Search Depth: 132
+Time Taken (milliseconds): 0
+ID-DFS:
+ID-DFS - explore solution up to depth: 131 -> at depth 128 solved
+ID-DFS - explore solution up to depth: 127 -> at depth 127 solved
+ID-DFS - explore solution up to depth: 126 -> at depth 124 solved
+ID-DFS - explore solution up to depth: 123 -> at depth 123 solved
+ID-DFS - explore solution up to depth: 122 -> at depth 121 solved
+ID-DFS - explore solution up to depth: 120 -> at depth 120 solved
+ID-DFS - explore solution up to depth: 119 -> at depth 119 solved
+ID-DFS - explore solution up to depth: 118 -> at depth 118 solved
+ID-DFS - explore solution up to depth: 117 -> at depth 117 solved
+ID-DFS - explore solution up to depth: 116 -> at depth 115 solved
+ID-DFS - explore solution up to depth: 114 -> at depth 112 solved
+ID-DFS - explore solution up to depth: 111 -> at depth 100 solved
+ID-DFS - explore solution up to depth: 99 -> at depth 93 solved
+ID-DFS - explore solution up to depth: 92 -> at depth 92 solved
+ID-DFS - explore solution up to depth: 91 -> at depth 91 solved
+ID-DFS - explore solution up to depth: 90 -> at depth 90 solved
+ID-DFS - explore solution up to depth: 89 -> at depth 89 solved
+ID-DFS - explore solution up to depth: 88 -> at depth 82 timed-out
+
+Solution Type: solved
+States Searched: 7352222
+Unique States Searched: 2555234
+Backtracks: 7352133
+Dominance Moves: 1592784
+States Removed From Cache: 0
+Final States In Cache: 962450
+Final Buckets In Cache: 1572869
+Maximum Search Depth: 89
+Final Search Depth: 89
+Time Taken (milliseconds): 9665
+
+Master1.json
+===================================================
+DFS:
+Solution Type: solved
+States Searched: 14513
+Unique States Searched: 3951
+Backtracks: 14429
+Dominance Moves: 1677
+States Removed From Cache: 0
+Final States In Cache: 2274
+Final Buckets In Cache: 3079
+Maximum Search Depth: 84
+Final Search Depth: 84
+Time Taken (milliseconds): 23
+ID-DFS:
+ID-DFS - explore solution up to depth: 83 -> at depth 83 solved
+ID-DFS - explore solution up to depth: 82 -> at depth 82 solved
+ID-DFS - explore solution up to depth: 81 -> at depth 81 solved
+ID-DFS - explore solution up to depth: 80 -> at depth 80 solved
+ID-DFS - explore solution up to depth: 79 -> at depth 79 solved
+ID-DFS - explore solution up to depth: 78 -> at depth 77 timed-out
+
+Solution Type: solved
+States Searched: 6932130
+Unique States Searched: 3306597
+Backtracks: 6932051
+Dominance Moves: 2449592
+States Removed From Cache: 0
+Final States In Cache: 857005
+Final Buckets In Cache: 1572869
+Maximum Search Depth: 79
+Final Search Depth: 79
+Time Taken (milliseconds): 7930
+
+
+
+GrandMaster1.json
+===================================================
+
+
+GrandMaster2.json
+===================================================
+Solution Type: timed-out
+States Searched: 6243797
+Unique States Searched: 2347881
+Backtracks: 6243772
+Dominance Moves: 1610539
+States Removed From Cache: 0
+Final States In Cache: 737342
+Final Buckets In Cache: 786433
+Maximum Search Depth: 68
+Final Search Depth: 25
+Time Taken (milliseconds): 10000
+
+Solution Type: timed-out
+States Searched: 6243797
+Unique States Searched: 2347881
+Backtracks: 6243772
+Dominance Moves: 1610539
+States Removed From Cache: 0
+Final States In Cache: 737342
+Final Buckets In Cache: 786433
+Maximum Search Depth: 68
+Final Search Depth: 25
+Time Taken (milliseconds): 10000

@@ -79,7 +79,10 @@ command_line_helper::command_line_helper()
                           "supplied solitaire game. Must supply "
                           "either 'random', 'benchmark', 'solvability' or list of deals to be "
                           "solved.")
-            ("deal-only", "outputs the starting deal for a given game type & random seed as json");
+            ("deal-only", "outputs the starting deal for a given game type & random seed as json")
+            ("iddfs", "if true, preform iterative-deeping-DFS, which returns an optimal* solution (minimal depth)")
+            ("dls", po::value<int>(),"preform Depth Limited Search with the depth limit that was proveded")
+            ("print_path", "outputs the path from init state to the winning state");
 
     po::options_description hidden_options("Hidden options");
     hidden_options.add_options()
@@ -121,6 +124,17 @@ bool command_line_helper::parse(int argc, const char* argv[]) {
     classify = (vm.count("classify") != 0);
 
     deal_only = (vm.count("deal-only") != 0);
+
+    print_path = (vm.count("print_path") != 0); // if true, print all the states from init -> end
+    
+    optimal_solution = (vm.count("iddfs") != 0); // if true, after the DFS solution, solve with id-DFS
+    
+    // if dls>0 use Depth limited search
+    if (vm.count("dls")) {
+        dls_depth_limit = vm["dls"].as<int>();
+    } else {
+        dls_depth_limit = -1;
+    }
 
     if (vm.count("input-files")) {
         input_files = vm["input-files"].as<vector<string>>();
@@ -296,12 +310,23 @@ int command_line_helper::get_random_deal() {
     return random_deal;
 }
 
+bool command_line_helper::get_optimal_solution() {
+    return optimal_solution;
+}
+int command_line_helper::get_dls_depth_limit() {
+    return dls_depth_limit;
+}
+
 bool command_line_helper::get_classify() {
     return classify;
 }
 
 bool command_line_helper::get_deal_only() {
     return deal_only;
+}
+
+bool command_line_helper::get_print_path() {
+    return print_path;
 }
 
 uint64_t command_line_helper::get_cache_capacity() {

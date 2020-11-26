@@ -37,8 +37,13 @@ public:
     const std::string get_solitaire_type();
     const std::string get_rules_file();
     int get_random_deal();
+
+    bool get_optimal_solution();
+    int get_dls_depth_limit();
+
     bool get_classify();
     bool get_deal_only();
+    bool get_print_path();
     int get_solvability();
     uint get_cores();
     bool get_available_game_types();
@@ -74,6 +79,7 @@ private:
     bool help;
     bool classify;
     bool deal_only;
+    bool print_path;
     int solvability;
     std::vector<int> resume;
     uint cores;
@@ -83,6 +89,9 @@ private:
     streamliner_opt streamliners;
     uint64_t cache_capacity;
     uint64_t timeout;
+    // idDFS / DLS
+    bool optimal_solution;
+    int dls_depth_limit;
 };
 
 #endif //SOLVITAIRE_COMMAND_LINE_HELPER_H

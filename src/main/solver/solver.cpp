@@ -78,6 +78,20 @@ solver::node::node(const move m) noexcept
         : mv(m), child_moves(), cache_state() {
 }
 
+//  void solver::operator= (const solver &slv) {
+//      result = slv.result;
+// 	sol_type = slv.sol_type;
+//     states_searched = slv.states_searched;
+//     unique_states_searched = slv.unique_states_searched;
+//     backtracks = slv.backtracks;
+//     dominance_moves = slv.dominance_moves;
+//     states_removed_from_cache = slv.states_removed_from_cache;
+//     cache_size = slv.cache_size;
+//     cache_bucket_count = slv.cache_bucket_count;
+//     depth = slv.depth;
+//     time = slv.time;	
+//  }
+
 solver::result solver::run(boost::optional<millisec> timeout) {
     // Set interrupt handler
     signal(SIGINT, sigint_handler);
@@ -90,6 +104,25 @@ solver::result solver::run(boost::optional<millisec> timeout) {
     res.cache_size = cache.size();
     res.cache_bucket_count = cache.bucket_count();
     res.time = std::chrono::duration_cast<millisec>(clock::now() - start_time);
+
+    return res;
+}
+
+
+solver::result solver::run_DLS(uint64_t depth_limit, boost::optional<millisec> timeout) {
+    // Set interrupt handler
+    signal(SIGINT, sigint_handler);
+
+    // Set timings
+    const clock::time_point start_time = clock::now();
+
+    result dls_reult = timeout ? dls(depth_limit, start_time + *timeout) : dls(depth_limit);
+    res.sol_type = dls_reult.sol_type;
+    res.states_removed_from_cache = cache.get_states_removed_from_cache();
+    res.cache_size = cache.size();
+    res.cache_bucket_count = cache.bucket_count();
+    res.time = std::chrono::duration_cast<millisec>(clock::now() - start_time);
+   
     return res;
 }
 
@@ -242,6 +275,13 @@ void solver::print_solution() const {
     }
     cout << "\n";
 }
+
+// std::ostream& operator<< (std::ostream& out, const solver::result::type& rt) {v);
+//             cout << state_copy << "\n";
+//         }
+//     }
+//     cout << "\n";
+// }
 
 std::ostream& operator<< (std::ostream& out, const solver::result::type& rt) {
     switch(rt) {
